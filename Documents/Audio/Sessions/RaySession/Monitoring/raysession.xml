@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE RAYSESSION>
+<RAYSESSION VERSION="0.17.3" name="Monitoring">
+  <Clients>
+    <client id="patch" launched="true" executable="ray-jackpatch" name="JACK Patch Memory" icon="curve-connector" prefix_mode="1" protocol="Internal" />
+    <client id="single" launched="true" executable="carla-jack-single" name="Carla-Single-Client" desktop_file="carla-jack-single.desktop" prefix_mode="1" gui_visible="false" jack_naming="true" template_origin="Carla (JACK single client)" />
+  </Clients>
+  <RemovedClients />
+  <Windows />
+</RAYSESSION>

@@ -1,0 +1,106 @@
+{
+  "views": [
+    {
+      "index": 1,
+      "default_port_types": "ALL",
+      "ALL": {
+        "Webcam Vitade AF Analog Stereo": {
+          "INPUT": {
+            "pos": [402, 2]
+          },
+          "OUTPUT": {
+            "pos": [-814, 98]
+          }
+        },
+        "Audient iD4 0": {
+          "INPUT": {
+            "pos": [178, 26]
+          },
+          "OUTPUT": {
+            "pos": [-814, -82]
+          }
+        },
+        "Audient iD4 Line Input": {
+          "INPUT|OUTPUT": {
+            "pos": [-814, -130]
+          }
+        },
+        "Audient iD4 XLR Microphone": {
+          "INPUT|OUTPUT": {
+            "pos": [-814, -214]
+          }
+        },
+        "Split Audient iD4 Speaker": {
+          "INPUT|OUTPUT": {
+            "pos": [-814, -262]
+          }
+        },
+        "Split Audient iD4 Headphones / Monitor": {
+          "INPUT|OUTPUT": {
+            "pos": [-814, -310]
+          }
+        },
+        "Audient iD4 Headphones / Monitor": {
+          "INPUT|OUTPUT": {
+            "pos": [-318, -514]
+          }
+        },
+        "Audient iD4 Speaker": {
+          "INPUT|OUTPUT": {
+            "pos": [-302, 50]
+          }
+        },
+        "Navi 31 HDMI/DP Audio Digital Stereo (HDMI)": {
+          "INPUT": {
+            "pos": [162, 206]
+          },
+          "OUTPUT": {
+            "pos": [-814, 206]
+          }
+        },
+        "Split Audient iD4 Line Input": {
+          "INPUT|OUTPUT": {
+            "pos": [-318, 182]
+          }
+        },
+        "Split Audient iD4 XLR Microphone": {
+          "INPUT|OUTPUT": {
+            "pos": [-318, 122]
+          }
+        },
+        "Midi-Bridge": {
+          "INPUT": {
+            "pos": [146, 266]
+          },
+          "OUTPUT": {
+            "pos": [-814, 314]
+          }
+        },
+        "BLE MIDI 1": {
+          "INPUT": {
+            "pos": [274, 314]
+          },
+          "OUTPUT": {
+            "pos": [-814, 266]
+          }
+        },
+        "Carla-Single-Client.single": {
+          "INPUT|OUTPUT": {
+            "pos": [-350, -298],
+            "flags": "WRAPPED"
+          }
+        },
+        "Firefox": {
+          "INPUT|OUTPUT": {
+            "pos": [-814, -394]
+          }
+        }
+      }
+    }
+  ],
+  "custom_names": {
+    "groups": {},
+    "ports": {}
+  },
+  "version": "0.17.3"
+}

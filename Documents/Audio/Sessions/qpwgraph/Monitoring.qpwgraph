@@ -1,0 +1,78 @@
+<!DOCTYPE patchbay>
+<patchbay name="Monitoring" version="0.9.8">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 0" port="Audient iD4:capture_AUX0"/>
+   <input node="Split Audient iD4 XLR Microphone" port="Split Audient iD4 XLR Microphone:input_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 0" port="Audient iD4:capture_AUX3"/>
+   <input node="Split Audient iD4 Line Input" port="Split Audient iD4 Line Input:input_AUX3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Split Audient iD4 Headphones / Monitor" port="Split Audient iD4 Headphones / Monitor:output_AUX0"/>
+   <input node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Responses Stereo:Input L"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Split Audient iD4 Speaker" port="Split Audient iD4 Speaker:output_AUX3"/>
+   <input node="Audient iD4 0" port="Audient iD4:playback_AUX3"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Reverb Stereo:Output L"/>
+   <input node="Audient iD4 0" port="Audient iD4:playback_AUX0"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 XLR Microphone" port="Audient iD4:capture_FL"/>
+   <input node="PortAudio" port="PortAudio:in_30"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Responses Stereo:Output R"/>
+   <input node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Reverb Stereo:Input R"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 XLR Microphone" port="Audient iD4:capture_FL"/>
+   <input node="PortAudio" port="PortAudio:in_38"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Responses Stereo:Output L"/>
+   <input node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Reverb Stereo:Input L"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Split Audient iD4 Speaker" port="Split Audient iD4 Speaker:output_AUX2"/>
+   <input node="Audient iD4 0" port="Audient iD4:playback_AUX2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Reverb Stereo:Output R"/>
+   <input node="Audient iD4 0" port="Audient iD4:playback_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 0" port="Audient iD4:capture_AUX1"/>
+   <input node="Split Audient iD4 XLR Microphone" port="Split Audient iD4 XLR Microphone:input_AUX1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FL"/>
+   <input node="Audient iD4 Headphones / Monitor" port="Audient iD4:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Split Audient iD4 Headphones / Monitor" port="Split Audient iD4 Headphones / Monitor:output_AUX1"/>
+   <input node="Carla-Single-Client.single" port="Carla-Single-Client.single:LSP Impulse Responses Stereo:Input R"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Firefox" port="Firefox:output_FR"/>
+   <input node="Audient iD4 Headphones / Monitor" port="Audient iD4:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 XLR Microphone" port="Audient iD4:capture_FL"/>
+   <input node="PortAudio" port="PortAudio:in_42"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 0" port="Audient iD4:capture_AUX2"/>
+   <input node="Split Audient iD4 Line Input" port="Split Audient iD4 Line Input:input_AUX2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Audient iD4 XLR Microphone" port="Audient iD4:capture_FL"/>
+   <input node="PortAudio" port="PortAudio:in_29"/>
+  </item>
+ </items>
+</patchbay>
+

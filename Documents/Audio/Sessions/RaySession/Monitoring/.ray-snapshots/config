@@ -1,0 +1,9 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+	worktree = /home/nnelchior/Documents/Audio/Sessions/RaySession/Monitoring
+[user]
+	email = nnelchior@arch-desktop
+	name = nnelchior
