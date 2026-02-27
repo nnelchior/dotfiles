@@ -1,0 +1,971 @@
+sudo pacman -S swww
+yazi
+sudo pacman -Rns pulseaudo
+sudo pacman -Rns pulseaudio
+sudo pacman -S matugen
+sudo pacman -S starship
+config nu
+stow .
+clear
+yazi
+stow .
+sudo pacman -S xorg-xwayland
+yazi
+reboot
+sudo pacman -S adw-gth-theme
+sudo pacman -S adw-gtk-theme
+clear
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark' && gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+gsettings set org.gnome.desktop.interface gtk-theme 'adw-gtk3-dark'; gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'
+sudo pacman -S adwaita-icon-theme
+clear
+sudo pacman -S qt5ct qt6ct
+clear
+config env
+yazi
+cleaer
+clear
+echo $env.QT_QPA_PLATFORMTHEME
+reboot
+config env
+reboot
+echo $env.QT_QPA_PLATFORMTHEME
+yazi
+reboot
+config env
+source $nu.env-path
+clear
+reboot
+env | find QT
+yazi
+cd .dotfiles/
+stow .
+yazi
+reboot
+qt6ct
+yazi
+sudo mkdir /etc/environment.d/
+sudo nano /etc/environment.d/qt.conf
+reboot
+sudo pacman -S qt5-wayland qt6-wayland
+yazi
+export QT_QPA_PLATFORMTHEME=qt6ct
+load-env { QT_QPA_PLATFORMTHEME: "qt6ct" }
+sudo nano /etc/environment
+reboot
+cd /etc/environment.d/
+ls
+cd ../
+sudo rm -rf environment.d/
+ls
+reboot
+which matugen
+clear
+yazi
+cd .dotfiles/
+stow .
+yazi
+stow .
+yazi
+sudo pacman -S kvantum mako quickshell wine
+yazi
+clear
+yazi
+cd .dotfiles/
+stow .
+clear
+yazi
+stow .
+yazi
+cd
+clear
+yazi
+cd .dotfiles/
+stow .
+clear
+swww img center
+swww img --help
+swww img -t center
+swww img -t center ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+matugen 
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+yaiz
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+clear
+btop
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+yazi
+stow .
+cd .dotfiles/
+stow .
+yazi
+btop
+clear
+sudo pacman -S python
+clear
+yay -S python-pywalfox
+pywalfox install
+pywalfox -h
+pywalfox-daemon
+pywalfox daemon
+clear
+pywalfox daemon
+pywalfox start
+clear
+reboot
+fastfetch
+sudoedit nano.txt
+sudo emacs
+sudo pacman -S lxqt-policykit
+clear
+sudo pacman -S lxqt-policykit
+clear
+sudo emacs
+sudo -E emacs
+emacs
+clear
+yazi
+clear
+emacs
+clear
+emacs
+yazi
+config env
+cleear
+clear
+reboot
+emacs
+sudo nano /etc/pacman.conf
+sudo pacman -Syu
+clear
+sudo pacman -Qtdq
+clear
+sudo pacman -Scc
+clear
+sudo pacman -S steam
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+swww img -t center ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+fastfetch
+clear
+fastfetch
+clear
+fastfetch
+sudo pacman -S grim
+clear
+grim screenshot.png
+yazi
+clear
+grim screenshot.png
+fastfetch
+yazi
+clear
+fastfetch
+clear
+fastfetch
+grim screenshot.png
+нфяш
+emacs
+sudo pacman -S xdg-desktop-portal xdg-desktop-portal-gtk xdg-desktop-portal-wlr
+echo $env.XDG_CURRENT_DESKTOP
+reboot
+steam
+sudo pacman -S DoomRunner
+yay -S doomrunner
+yay -S uzdoom
+sudo pacman -S pcmanfm-qt
+sudo pacman -S kvantum-qt5 kvlibadwaita
+sudo pacman -S kvantum-qt5
+yay -S kvantum-theme-libadwaita
+yay -S kvantum-theme-libadwaita-git
+sudo pacman -S cliphist wl-clipboard
+curl -fsSL https://install.danklinux.com | sh
+yay -S dms-shell-bin
+systemctl --user enable dms
+systemctl --user start dms
+dms
+clear
+dms
+dms restart
+yay -Qe
+yay -Rns dms-shell-bin
+reboot
+dms restart
+clear
+dmstats 
+dmsetup 
+clear
+yazi
+clear
+pacman -Qe
+sudo pacman -Rns emacs
+sudo pacman -Rns emacs-wayland
+sudo pacman -S neovim
+nvim
+yazi
+cd .dotfiles/
+stow .
+yazi
+stow .
+yazi
+echo $env.EDITOR
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+yazi
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+clear
+lazy
+nvim
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+shut down
+shutdown
+shutdown -now
+shutdown -- n
+shutdown -n
+shutdown --now
+shutdown --help
+shutdown -P
+shutdown --halt
+shutdown
+sudo pacman -Syu
+clear
+yay -Syu
+yay -Rs dms-shell-bin-debug
+sudo pacman -S luarocks
+sudo pacman -S lua
+clear
+sudo pacman -S magick
+sudo pacman -S imagemagick
+clean
+clear
+sudo pacman -S ghostty
+clear
+sudo pacman -Rs ghostty
+sudo pacman -S ghostty
+sudo pacman -Rns ghostty
+sudo pacman -S wezterm
+clear
+yazi
+clear
+yazi
+clear
+:q
+:q!
+yazi
+sudo pacman -S emacs
+sudo pacman -S emacs-wayland
+sudo pacman -Rns nvim
+sudo pacman -Rns neovim
+yazi
+clear
+yazi
+sudo pacman -S durdraw
+yay -S durdraw
+sudo pacman -Rs emacs-wayland
+sudo pacman -S helix
+sudo pacman -Rns wezterm
+yazi
+hx
+helix
+yazi
+hx
+helix
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+yazi
+exec nushell
+clear
+yazi
+helix --version
+shutdown now
+helix
+clear
+yazi
+ghostty
+sudo pacman -S ghostty
+helix
+sudo pacman -Rns ghostty
+sudo pacman -S wezterm
+sudo pacman -Rns ghostty
+yazi
+fastfetch
+clear
+yazi
+z
+cd .dotfiles/
+stow .
+clear
+yazi
+stow .
+mkdir wezterm
+stow .
+yazi
+cd .dotfiles/
+stow .
+yazi
+cd .dotfiles/
+stow .
+yazi
+clear
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+matugen image ~/Pictures/Wallpapers/wallhaven-4gr6pq.jpg
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+yazi
+clear
+sudo pacman -S alacritty
+sudo pacman -Rns wezterm
+yazi
+cd .dotfiles/
+stow .
+yazi
+clear
+shutdown now
+yazi
+clear
+yazi
+sudo pacman -Rns alacritty
+yazi
+clear
+yazi
+sudo pacman -S qmlls
+sudo pacman -Syu
+qmlls --version
+sudo pacman -S qt6-declarative
+qmlls6 --version
+clear
+yazi
+cd .dotfiles/
+yazi
+sudo pacman -S quickshell
+yazi
+cd .config/
+mkdir quickshell/
+clear
+cd
+cd .dotfiles/
+stow .
+yazi
+clear
+yazi
+clear
+yazi
+clear
+cd .config/
+clear
+yazi
+sudo pacman -S qmlformat
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+yazi
+clear
+cd
+sudo pacman -S zoxide
+config nu
+zoxide init nushell
+zoxide init nushell | save -a $nu.config-path
+config.nu
+config nu
+clear
+z
+zi
+sudo pacman -S fzf
+clear
+z .dotfiles
+z .config
+ls
+clear
+z quickshell/
+touch shell.qml
+qs
+helix shell.qml
+z quickshell/
+z quickshell
+z quickshell
+clear
+helix shell.qml
+qs
+yazi
+clear
+z
+clear
+ls
+z Documents
+clear
+mkdir Dev/
+z Dev/
+z ../
+z Dev
+clear
+node -v
+clear
+sudo pacman -S chromium
+mkdir JavaScript
+ls
+z JavaScript/
+ls
+clear
+sudo pacman -Syu
+clear
+sudo pacman -S nodejs npm
+sudo pacman -Rns nodejs npm
+sudo pacman -S nvm
+nvm
+yazi
+sudo pacman -Rns nvm
+yay -S fnm-bin
+config nu
+yazi
+helix lesson1.js
+yazi
+z dotfiles
+z helix
+z config
+z helix
+ls
+sudo pacman -S typescript-language-server
+yazi
+clear
+z java
+zi
+ls
+helix lesson1.js
+z helix
+ls
+helix languages.toml
+z java
+ls
+z
+z js
+z JS
+z java
+clear
+ls
+yazi
+clear
+z quickshell
+ls
+qs 
+qs -h
+qs --path
+qs --path ./AlluminiumShell
+yazi
+z quickshell
+ls
+z alluminiumshell
+z AlluminiumShell
+ls
+hx
+helix shell.qml
+clear
+sudo pacman -S emacs-wayland
+yazi
+sudo pacman -S carla
+sudo pacman -S guitarix
+sudo pacman -S gxplugins.lv2
+sudo nano /etc/security/limits.d/audio.conf
+sudo mkdir /etc/security/limits.d
+sudo nano /etc/security/limits.d/audio.conf
+sudo usermod -aG audio $env.USER
+reboot
+yazi
+sudo pacman -S qpwgraph
+grim -g "$(slurp" screenshot.png
+grim -g "$(slurp)" screenshot.png
+grim 
+grim screenshot.png
+нфяш
+sudo pacman -S lsp-plugins-lv2
+sudo pacman -S easyeffects
+sudo pacman -Rns easyeffects
+sudo pacman -S lsp-plugins
+sudo pacman -S raysession
+yay -S raysession
+restart
+reboot
+grim screenshot.png
+reboot
+sudo pacman -Rns lsplugins
+sudo pacman -Rns lsp-plugins
+sudo pacman -Rns qtractor
+sudo pacman -Rns helix emacs
+sudo pacman -Rns helix emacs-wayland
+sudo pacman -S neovim
+clear
+yazi
+z config
+mkdir nvim
+z nvim
+touch init.lua
+nvim init.lua
+yazi
+z
+z nvim
+clear
+yazi
+config nu
+yazi
+exec nushell
+clear
+ls
+nvim init.lua
+nvim
+yazi
+z nvim
+sudo pacman -S luarocks
+clear
+reboot
+yazi
+clear
+yazi
+systemctl --user restart pipewire pipewire-pulse pipewire-jack wireplumber
+yazi
+systemctl --user restart pipewire pipewire-pulse pipewire-jack wireplumber
+killall -9 ray-daemon ray-proxy
+yay -S stoat-desktop-bin
+reboot
+sudo pacman -S strawwberry
+sudo pacman -S strawberry
+sudo pacman -S tauon
+sudo pacman -S tauon-music-box
+sudo pacman -Rns strawberry
+lsblk
+lsblk -dno UUID /dev/sdb
+lsblk -dno UUID /dev/sdb1
+clear
+lsblk -dno UUID /dev/sdb1
+lsblk
+sudo mkdir /mnt/hdd1
+sudo nvim /etc/fstab
+reboot
+sudo nvim /etc/fstab
+sudo nano /etc/fstab
+lsblk -dno UUID /dev/sdb1
+lsblk
+sudo nvim /etc/fstab
+reboot
+yay -S morewaita-icon-theme-git
+gsettings set org.gnome.desktop.interface icon-theme 'MoreWaita'
+clear
+sudo pacman -S localsend
+sudo pacman -S local-send
+yay -S localsend
+sudo pacman -S udisks2 udiskie gvfs-mtp libmtp android-udev
+нфяш
+yazi
+sudo pacman -S android-tools
+clear
+reboot
+z Downloads/
+ls
+yazi
+z Doc
+z Android
+z AndroidDev/
+ls
+clear
+adb devices
+clear
+fastboot devices
+fastboot reboot-bootloader
+fastboot devices
+ls
+fastboot flash boot boot.img
+fastboot flash dtbo dtbo.img
+fastboot flash vendor_boot vendor_boot.img
+fastboot flash --disable-verity --disable-verification vbmeta vbmeta.img
+adb sideload lineage-23.2-20260223-nightly-munch-signed.zip
+adb sideload MindTheGapps-16.0.0-arm64-20260216_221300.zip
+yazi
+adb devices
+adb install KernelSU_v3.1.0_32302-release.apk
+adb push boot.img /sdcard/Download/
+adb shell uname -r
+adb install `KernelSU_v3.0.0-30-legacy_32334-release (1).apk`
+z Downloads
+ls
+z `Telegram Desktop/`
+ls
+clear
+ls
+z `ksu kernel v 10.4/`
+ls
+yazi
+clear
+ls
+adb sideload `ksu kernel v 10.4.zip`
+adb sideload boot.img
+adb push KernelSU_Next_v3.0.1_32967-release.apk /sdcard/Download/
+yay -S payload-dumper-go-bin
+yazi
+ls
+z Downloads/
+ls
+unzip euclidOS-v3.2-Axiom-munch-20260208-1831-OFFICIAL.zip
+payload-dumper-go -p boot euclidOS-v3.2-Axiom-munch-20260208-1831-OFFICIAL.zip
+yazi
+payload-dumper-go -p boot euclidOS-v3.2-Axiom-munch-20260208-1831-OFFICIAL.zip
+yazi
+fastboot flash boot boot.img
+fastboot reboot
+yazi
+fastboot flash boot boot.img
+fastboot reboot
+yazi
+adb install Magisk-v30.7.apk
+adb push boot.img /sdcard/Download/
+adb shell ls /sdcard/Download/
+adb pull/sdcard/Download/magisk_patched-30700_FHMg6.img
+adb pull /sdcard/Download/magisk_patched-30700_FHMg6.img
+ls
+adb reboot bootloader
+fastboot flash boot magisk_patched-30700_FHMg6.img
+fastboot reboot
+yay -S proton-vpn-gtk-app
+sudo pacman -S networkmanager network-manager-applet
+sudo systemctl enable --now NetworkManager
+shutdown now
+yazi
+clear
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+yazi
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+reboot
+yay -S audacity4-alpha
+sudo pacman -S lostfiles
+^lostfiles | lines | wrap path
+sudo ^lostfiles | lines | wrap path
+sudo lostfiles | lines | wrap path
+sudo pacman -S reaper
+clear
+wpctl
+clear
+wpctl status
+grim screenshot.png
+sudo pacman -S gimp
+sudo pacman -S pwvucontrol
+sudo pacman -S pwvucontrol
+pw-link -io
+yay -S pwvucontrol
+pw-link -io
+yazi
+pw-loopback --name "Universal_Loopback" -d "System Loopback" --capture-props='media.class=Audio/Source/Virtual'
+clear
+reboot
+yazi
+wpctl status
+pw-link -io
+clear
+pw-link -io
+wpctl status
+yazi
+clear
+rm -rf ~/.local/state/wireplumber/
+yazi
+wpctl status
+yazi
+clear
+pw-link -io 
+wpctl status 
+yazi
+clear
+wireplumber --help
+wireplumber --verify-config
+journalctl --user -u wireplumber -f
+clear
+systemctl --user restart wireplumber
+journalctl --user -u wireplumber -f
+pw-link -i -l
+yazi
+journalctl --user -u wireplumber -f
+clear
+systemctl --user restart wireplumber
+pw-link -i -l
+journalctl --user -u wireplumber -f
+yazi
+systemctl --user restart wireplumber
+pw-link -i -l
+journalctl --user -u wireplumber -f
+clear
+wireplumber -h
+wireplumber -v
+clear
+wireplumber -v
+yazi
+systemctl --user restart wireplumber
+pw-link -i -l
+journalctl --user -u wireplumber -f
+yazi
+clear
+systemctl --user restart wireplumber
+pw-link -i -l
+systemctl --user restart wireplumber
+clear
+systemctl --user restart wireplumber
+pw-link -i -l
+journalctl --user -u wireplumber -f
+systemctl --user restart wireplumber
+pw-link -i -l
+pw-dump | grep -iE "port.alias|Mic/Line In"
+systemctl --user restart wireplumber
+pw-link -i -l
+pw-dump | grep -iE "port.alias|Mic/Line In"
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+pw-dump | grep -iE "port.alias|Mic/Line In"
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+pw-dump | grep -iE "port.alias|Mic/Line In"
+pw-link -i -l
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+yazi
+find ~/.config/wireplumber -name "*.lua"
+ls ~/.config/wireplumber/**/* | grep .lua
+сдуфк
+clear
+ls ~/.config/wireplumber/**/* | grep .lua
+ls /etc/wireplumber/**/* | grep .lua
+ls /usr/share/wireplumber/scripts/
+pw-link -l
+pw-link -l alsa_input.usb-Audient_Audient_iD4-00.pro-input-0:capture_AUX0
+clear
+wpctl status 
+wpctl inspect 124
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+wpctl status 
+wpctl inspect 44
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+wpctl status 
+wpctl inspect 52
+clear
+yazi
+systemctl --user restart wireplumber
+pw-link -i -l
+journalctl --user -u wireplumber -f
+wpctl status 
+wpctl inspect 39
+wireplumber -v
+pw-link -a
+pw-link -h
+clear
+pw-link -h
+pw-link -a
+clear
+systemctl --user restart wireplumber
+pw-dump | grep "Mic/Line In"
+object.rules = [<\n>  # --- ВХОДЫ ---<\n>  {<\n>    matches = [ { "port.name" = "~alsa_input.usb-Audient_Audient_iD4-00.*:capture_AUX0" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Mic/Line In",<\n>        "port.description" = "Mic/Line In"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_input.usb-Audient_Audient_iD4-00.*:capture_AUX1" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "JFET Instrument In",<\n>        "port.description" = "JFET Instrument In"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_input.usb-Audient_Audient_iD4-00.*:capture_AUX2" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Loopback L",<\n>        "port.description" = "Loopback L"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_input.usb-Audient_Audient_iD4-00.*:capture_AUX3" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Loopback R",<\n>        "port.description" = "Loopback R"<\n>      }<\n>    }<\n>  },<\n><\n>  # --- ВЫХОДЫ ---<\n>  {<\n>    matches = [ { "port.name" = "~alsa_output.usb-Audient_Audient_iD4-00.*:playback_AUX0" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Main Output L",<\n>        "port.description" = "Main Output L"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_output.usb-Audient_Audient_iD4-00.*:playback_AUX1" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Main Output R",<\n>        "port.description" = "Main Output R"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_output.usb-Audient_Audient_iD4-00.*:playback_AUX2" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Loopback Send L",<\n>        "port.description" = "Loopback Send L"<\n>      }<\n>    }<\n>  },<\n>  {<\n>    matches = [ { "port.name" = "~alsa_output.usb-Audient_Audient_iD4-00.*:playback_AUX3" } ]<\n>    actions = {<\n>      update-props = {<\n>        "port.alias" = "Loopback Send R",<\n>        "port.description" = "Loopback Send R"<\n>      }<\n>    }<\n>  }<\n>]
+clear
+pw-dump | grep "Mic/Line In"
+yazi
+systemctl --user restart wireplumber
+pw-dump | grep -iE "Mic/Line In|JFET"
+systemctl --user restart pipewire wireplumber
+pw-dump | grep -iE "Mic/Line In|JFET"
+yazi
+clear
+systemctl --user restart wireplumber
+systemctl --user restart pipewire wireplumber
+clear
+wpctl status
+yazi
+pw-dump | jq '.[] | select(.info.props."node.name" | contains("Audient")) | .info.props'
+pw-dump | from json | where info?.props?.node.name? =~ "Audient" | get info.props
+pw-dump | from json | where info.props? != null | where info.props."node.name"? =~ "Audient" | get info.props
+clear
+pw-dump | from json | where info.props? != null | where info.props."node.name"? =~ "Audient" | get info.props
+pw-dump | from json | each { |it| if ($it | str contains "Audient") { $it.info.props? } } | drop nth 0
+pw-dump | from json | flatten | where info.props? != null | filter {|it| ($it.info.props | record keys | str join " ") =~ "Audient" } | get info.props
+clear
+pw-cli ls Port
+yazi
+systemctl --user restart wireplumber
+pw-cli ls Port | grep -A 5 "id 67"
+pw-cli ls Port 
+yazi
+clear
+systemctl --user restart pipewire wireplumber
+pw-dump | grep "node.description" -A 5 | grep "Audient"
+reboot
+yazi
+clear
+pw-dump | grep "node.description" -A 5 | grep "Audient"
+pw-cli ls Port 
+lv2ls | grep lsp-plug | grep para_eq_x16
+lv2ls
+lv2info "https://lsp-plug.in/plugins/lv2/impulse_reverb_stereo"
+lv2info "http://lsp-plug.in/plugins/lv2/impulse_reverb_stereo"
+lv2info "http://lsp-plug.in/plugins/lv2/impulse_responses_stereo"
+clear
+lv2info "http://lsp-plug.in/plugins/lv2/impulse_responses_stereo"
+lv2info "http://lsp-plug.in/plugins/lv2/impulse_reverb_stereo"
+sudo pacman -S watershot
+yay -S watershot
+clear
+aplay -l
+clear
+pw-metadata -n settings 0 clock.force-quantum 128
+yay -S watershot
+sudo pacman -S libwebp
+sudo pacman -Syu base-devel
+yay -S watershot
+sudo pacman -S --needed libwebp base-devel
+rm -rf ~/.cache/yay/watershot
+sudo rm -rf ~/.cache/yay/watershot
+yay -S watershot
+yazi
+clear
+yay -S watershot-wayshot-git
+watershot 
+watershot -h
+clear
+watershot -h
+watershot --active-window
+watershot --auto-capture
+yay -Rns watershot-wayshot-git
+clear
+git clone https://github.com/Kirottu/watershot<\n>cd watershot<\n>cargo install --path .
+z
+clear
+sudo pacman -S flameshot
+flameshot 
+yazi
+pkill flameshot
+flameshot gui
+sudo pacman -S --needed xdg-desktop-portal-wlr
+flameshot gui --raw
+flameshot -h
+flameshot gui full
+flameshot full
+flameshot config
+flameshot -h
+flameshot launcher
+SDL_VIDEODRIVER=wayland flameshot gui
+env XDG_CURRENT_DESKTOP=wayfire flameshot gui
+env XDG_CURRENT_DESKTOP=sway flameshot gui
+sudo pacman -S slurp
+XDG_CURRENT_DESKTOP=sway QT_QPA_PLATFORM=wayland flameshot gui
+QT_QPA_PLATFORM=xcb flameshot gui
+wlr-randr
+sudo pacman -S wlr-randr
+wlr-randr
+clear
+wlr-randr
+xrandr --output DP-2 --primary
+flameshot
+clear
+flameshot -h
+flameshot gui
+with-env { QT_QPA_PLATFORM: "xcb" } { flameshot gui }
+alias shot = grim -g (slurp) - | swappy -f -
+flameshot gui
+sudo pacman -S swappy
+alias shot = grim -g (slurp) - | swappy -f -
+swappy 
+flameshot gui
+with-env { QT_QPA_PLATFORM: "xcb" } { flameshot gui }
+yazi
+z .dotfiles
+stow .
+yazi
+stow .
+clear
+yazi
+sudo pacman -S fuzzel
+fuzzel
+fuzzel --width 50 --lines 10
+fuzzel --width 50 --height 50 --lines 10
+fuzzel --width 50 --lines 10
+fuzzel --lines 10
+fuzzel --lines 100
+fuzzel --lines 15
+fuzzel --font="monospace:size=16"
+fuzzel --font="monospace:size=12"
+fuzzel --font="monospace:size=14"
+fuzzel --font="monospace:size=15"
+fuzzel --font="кщищещ:size=15"
+fuzzel --font="roboto:size=15"
+fuzzel --help
+fuzzel --width 10
+fuzzel --width 40
+sudo pacman -Rns fuzzel
+sudo pacman -Rns rofi
+sudo pacman -S albert
+yay -S albert
+yay -S albert-bin
+yazi
+albert
+albert
+clear
+albert
+with-env { QT_QPA_PLATFORM: "xcb" } { flameshot gui }
+albert --help
+albert --help-all
+firefox
+sudo pacman -Rns albert
+yay -Rns albert
+yay -Rns albert-bin
+vicinae server
+yay -S vicinae-bin
+vicinae server
+systemctl --user enable --now vicinae.service<\n>
+yazi
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+yazi
+z dot
+ls
+yazi
+clear
+ls
+ls -all
+z .config
+ls
+yazi
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+yazi
+clear
+z config
+ls
+z matugen
+ls
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+matugen image ~/Pictures/Wallpapers/wallhaven-8gk7ry.jpg
+clear
+echo $env.SHELL
+sudo pacman -Rns nushell
+yazi
+sudo pacman -S zsh zsh-completions
+yazi
+echo $env.SHELL
+clear

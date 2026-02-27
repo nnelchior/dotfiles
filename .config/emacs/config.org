@@ -1,0 +1,318 @@
+* Базовые настройки
+
+** Убираем визуальный мусор
+Убирает панель меню, панель инструментов, полосу прокрутки и т.д.
+
+#+begin_src elisp
+  (menu-bar-mode -1)
+  (tool-bar-mode -1)
+  (scroll-bar-mode -1)
+  (tooltip-mode -1)
+
+  (setq inhibit-startup-screen t)
+  (setq initial-scratch-message "")
+#+end_src
+
+** Визуальные настройки
+#+begin_src elisp
+  (global-display-line-numbers-mode t)
+  (setq display-line-numbers-type 'relative)
+
+  (global-hl-line-mode t)
+
+  (dolist (hook '(org-mode-hook
+                  markdown-mode-hook
+                  treemacs-mode-hook))
+    (add-hook hook (lambda () (display-line-numbers-mode -1))))
+#+end_src
+
+** Настройки use-package
+#+begin_src elisp
+  (setq use-package-always-ensure t)
+#+end_src
+
+** Тема
+#+begin_src elisp
+  (load-theme 'matugen t)
+#+end_src
+
+* Репозитории
+Список репозиториев
+
+** MELPA
+#+begin_src elisp
+  (require 'package)
+  (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+  (package-initialize)
+#+end_src
+
+* Пакеты
+
+** Emacs Dashboard
+#+begin_src elisp
+  (use-package dashboard
+    :ensure t
+    :after nerd-icons
+    :init
+    (setq dashboard-display-icons-p t)     
+    (setq dashboard-icon-type 'nerd-icons) 
+    (setq dashboard-set-heading-icons t)
+    (setq dashboard-set-file-icons t)
+    (setq dashboard-banner-logo-title "Добро пожаловать в Emacs!")
+    (setq dashboard-center-content t)
+
+    :config
+    (dashboard-setup-startup-hook))
+#+end_src
+
+** Evil
+#+begin_src elisp
+  (use-package evil
+    :ensure t
+    :init
+    (setq evil-want-integration t)
+    (setq evil-want-keybinding nil)
+    :config
+    (evil-mode 1))
+#+end_src
+
+** Evil Collection
+#+begin_src elisp
+  (use-package evil-collection
+    :after evil
+    :ensure t
+    :config
+    (evil-collection-init))
+#+end_src
+
+** Nerd Icons
+#+begin_src elisp
+  (use-package nerd-icons
+    :ensure t
+    :custom
+    (nerd-icons-font-family "CaskaydiaCove Nerd Font Propo"))
+#+end_src
+
+** Telephone Line
+#+begin_src elisp
+  (use-package telephone-line
+    :ensure t
+    :config
+
+    (telephone-line-mode 1))
+#+end_src
+
+#+begin_src elisp
+  (use-package highlight-indent-guides
+    :hook (prog-mode . highlight-indent-guides-mode)
+    :config
+    (setq highlight-indent-guides-method 'character)) ; 'fill или 'column
+#+end_src
+
+** Treemacs
+#+begin_src elisp
+  (use-package treemacs
+    :ensure t
+    :defer t
+    :init
+    (with-eval-after-load 'winum
+      (define-key winum-keymap (kbd "M-0") #'treemacs-select-window))
+    :config
+    (progn
+      (setq treemacs-buffer-name-function            #'treemacs-default-buffer-name
+            treemacs-buffer-name-prefix              " *Treemacs-Buffer-"
+            treemacs-collapse-dirs                   (if treemacs-python-executable 3 0)
+            treemacs-deferred-git-apply-delay        0.5
+            treemacs-directory-name-transformer      #'identity
+            treemacs-display-in-side-window          t
+            treemacs-eldoc-display                   'simple
+            treemacs-file-event-delay                2000
+            treemacs-file-extension-regex            treemacs-last-period-regex-value
+            treemacs-file-follow-delay               0.2
+            treemacs-file-name-transformer           #'identity
+            treemacs-follow-after-init               t
+            treemacs-expand-after-init               t
+            treemacs-find-workspace-method           'find-for-file-or-pick-first
+            treemacs-git-command-pipe                ""
+            treemacs-goto-tag-strategy               'refetch-index
+            treemacs-header-scroll-indicators        '(nil . "^^^^^^")
+            treemacs-hide-dot-git-directory          t
+            treemacs-hide-dot-jj-directory           t
+            treemacs-indentation                     2
+            treemacs-indentation-string              " "
+            treemacs-is-never-other-window           nil
+            treemacs-max-git-entries                 5000
+            treemacs-missing-project-action          'ask
+            treemacs-move-files-by-mouse-dragging    t
+            treemacs-move-forward-on-expand          nil
+            treemacs-no-png-images                   nil
+            treemacs-no-delete-other-windows         t
+            treemacs-project-follow-cleanup          nil
+            treemacs-persist-file                    (expand-file-name ".cache/treemacs-persist" user-emacs-directory)
+            treemacs-position                        'left
+            treemacs-read-string-input               'from-child-frame
+            treemacs-recenter-distance               0.1
+            treemacs-recenter-after-file-follow      nil
+            treemacs-recenter-after-tag-follow       nil
+            treemacs-recenter-after-project-jump     'always
+            treemacs-recenter-after-project-expand   'on-distance
+            treemacs-litter-directories              '("/node_modules" "/.venv" "/.cask")
+            treemacs-project-follow-into-home        nil
+            treemacs-show-cursor                     nil
+            treemacs-show-hidden-files               t
+            treemacs-silent-filewatch                nil
+            treemacs-silent-refresh                  nil
+            treemacs-sorting                         'alphabetic-asc
+            treemacs-select-when-already-in-treemacs 'move-back
+            treemacs-space-between-root-nodes        t
+            treemacs-tag-follow-cleanup              t
+            treemacs-tag-follow-delay                1.5
+            treemacs-text-scale                      nil
+            treemacs-user-mode-line-format           nil
+            treemacs-user-header-line-format         nil
+            treemacs-wide-toggle-width               70
+            treemacs-width                           35
+            treemacs-width-increment                 1
+            treemacs-width-is-initially-locked       t
+            treemacs-workspace-switch-cleanup        nil)
+
+      ;; The default width and height of the icons is 22 pixels. If you are
+      ;; using a Hi-DPI display, uncomment this to double the icon size.
+      ;;(treemacs-resize-icons 44)
+
+      (treemacs-follow-mode t)
+      (treemacs-filewatch-mode t)
+      (treemacs-fringe-indicator-mode 'always)
+      (when treemacs-python-executable
+        (treemacs-git-commit-diff-mode t))
+
+      (pcase (cons (not (null (executable-find "git")))
+                   (not (null treemacs-python-executable)))
+        (`(t . t)
+         (treemacs-git-mode 'deferred))
+        (`(t . _)
+         (treemacs-git-mode 'simple)))
+
+      (treemacs-hide-gitignored-files-mode nil))
+    :bind
+    (:map global-map
+          ("C-0"       . treemacs-select-window)
+          ("C-x t 1"   . treemacs-delete-other-windows)
+          ("C-S-e"     . treemacs)
+          ("C-x t d"   . treemacs-select-directory)
+          ("C-x t B"   . treemacs-bookmark)
+          ("C-x t C-t" . treemacs-find-file)
+          ("C-x t M-t" . treemacs-find-tag)))
+
+  (use-package treemacs-evil
+    :after (treemacs evil)
+    :ensure t)
+
+  (use-package treemacs-projectile
+    :after (treemacs projectile)
+    :ensure t)
+
+  (use-package treemacs-icons-dired
+    :hook (dired-mode . treemacs-icons-dired-enable-once)
+    :ensure t)
+
+  (use-package treemacs-magit
+    :after (treemacs magit)
+    :ensure t)
+
+  (use-package treemacs-persp ;;treemacs-perspective if you use perspective.el vs. persp-mode
+    :after (treemacs persp-mode) ;;or perspective vs. persp-mode
+    :ensure t
+    :config (treemacs-set-scope-type 'Perspectives))
+
+  (use-package treemacs-tab-bar ;;treemacs-tab-bar if you use tab-bar-mode
+    :after (treemacs)
+    :ensure t
+    :config (treemacs-set-scope-type 'Tabs))
+
+  (use-package treemacs-nerd-icons
+    :config
+    (treemacs-nerd-icons-config))
+
+  ;;(treemacs-start-on-boot)
+#+end_src
+
+* Dev Tools
+
+** IDE инфраструктура
+
+*** LSP-Mode
+#+begin_src elisp
+  (use-package lsp-mode
+    :init
+    ;; set prefix for lsp-command-keymap (few alternatives - "C-l", "C-c l")
+    (setq lsp-keymap-prefix "C-c l")
+    :hook (;; replace XXX-mode with concrete major-mode(e. g. python-mode)
+           (js-ts-mode . lsp)
+  	 (typescript-ts-mode . lsp)
+           (tsx-ts-mode . lsp)
+  	 (qml-mode . lsp)
+           ;; if you want which-key integration
+           (lsp-mode . lsp-enable-which-key-integration))
+    :config
+    (add-to-list 'lsp-language-id-configuration '(qml-mode . "qml"))
+    (lsp-register-client
+     (make-lsp-client :new-connection (lsp-stdio-connection "qmlls")
+  		    :major-modes '(qml-mode)
+  		    :priority 10
+  		    :server-id 'qmlls))
+    :commands lsp)
+
+  ;; optionally
+  (use-package lsp-ui :commands lsp-ui-mode)
+  ;; if you are helm user
+  (use-package helm-lsp :commands helm-lsp-workspace-symbol)
+  ;; if you are ivy user
+  (use-package lsp-ivy :commands lsp-ivy-workspace-symbol)
+  (use-package lsp-treemacs :commands lsp-treemacs-errors-list)
+
+  ;; optionally if you want to use debugger
+  (use-package dap-mode)
+  ;; (use-package dap-LANGUAGE) to load the dap adapter for your language
+
+  ;; optional if you want which-key integration
+  (use-package which-key
+      :config
+      (which-key-mode))
+#+end_src
+
+*** Company Mode
+#+begin_src elisp
+  (use-package company
+    :ensure t
+    :defer 0
+    :custom
+    (company-minimum-prefix-length 1)
+    (company-idle-delay 0.0)
+    :bind
+    (:map company-active-map
+  	("C-n" . company-select-next)
+  	("C-p" . company-select-previous))
+    :config
+    (global-company-mode t))
+#+end_src
+
+*** Company Box
+#+begin_src elisp
+  (use-package company-box
+    :hook (company-mode . company-box-mode))
+#+end_src
+
+#+begin_src elisp
+  (use-package yasnippet
+    :ensure t
+    :config (yas-global-mode 1))
+#+end_src
+** Языки
+
+*** QML
+#+begin_src elisp
+  (use-package qml-mode
+    :ensure t
+    :mode "\\.qml\\'")
+#+end_src

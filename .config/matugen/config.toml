@@ -1,0 +1,107 @@
+[config]
+version_check = false
+
+[config.wallpaper]
+set = false
+command = "swww"
+arguments = ["img", "-t", "center", "{{ image }}"]
+
+[templates.firefox-website-colors]
+input_path = "./websites/firefox-colors.css"
+output_path = "~/.config/mozilla/firefox/nnelchior/chrome/colors.css"
+
+[templates.btop]
+input_path = './templates/btop.theme'
+output_path = '~/.config/btop/themes/matugen.theme'
+post_hook = "pkill -USR2 btop || true"
+
+[templates.foot]
+input_path = './templates/foot-colors.ini'
+output_path = '~/.config/foot/themes/matugen.ini'
+
+[templates.emacs]
+input_path = './templates/colors.css'
+output_path = '~/.config/emacs/colors.css'
+
+[templates.gtk3]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-3.0/colors.css'
+post_hook = 'gsettings set org.gnome.desktop.interface gtk-theme ""; gsettings set org.gnome.desktop.interface gtk-theme adw-gtk3-{{mode}}'
+
+[templates.gtk4]
+input_path = './templates/gtk-colors.css'
+output_path = '~/.config/gtk-4.0/colors.css'
+
+[templates.helix]
+input_path = './templates/helix.toml'
+output_path = '~/.config/helix/themes/matugen.toml'
+
+[templates.kvantum_kvconfig]
+input_path = './templates/kvantum-colors.kvconfig'
+output_path = '~/.config/Kvantum/matugen/matugen.kvconfig'
+
+[templates.kvantum_svg]
+input_path = './templates/kvantum-colors.svg'
+output_path = '~/.config/Kvantum/matugen/matugen.svg'
+
+[templates.mako]
+input_path = './templates/mako'
+output_path = '~/.config/mako/mako-colors'
+post_hook = 'makoctl reload'
+
+[templates.neovim]
+input_path = './templates/neovim/template.lua'
+output_path = '~/.config/nvim/themes/matugen.lua'
+post_hook = 'pkill -SIGUSR1 nvim || true'
+
+[templates.pywalfox]
+input_path = './templates/pywalfox-colors.json'
+output_path = '~/.cache/wal/colors.json'
+post_hook = 'pywalfox update'
+
+[templates.pixdecor]
+input_path = './templates/pixdecor-colors.ini'
+output_path = '~/.config/wayfire/pixdecor-matugen.ini'
+
+[templates.qt5ct]
+input_path = './templates/qtct-colors.conf'
+output_path = '~/.config/qt5ct/colors/matugen.conf'
+
+[templates.qt6ct]
+input_path = './templates/qtct-colors.conf'
+output_path = '~/.config/qt6ct/colors/matugen.conf'
+
+[templates.quickshell]
+input_path = './templates/quickshell.qml'
+output_path = '~/.config/quickshell/Colors.qml'
+
+[templates.starship]
+input_path = './templates/starship-colors.toml'
+output_path = '~/.config/starship.toml'
+
+[templates.telegram]
+input_path = './templates/telegram.tdesktop-theme'
+output_path = '~/Downloads/matugen.tdesktop-theme'
+
+[templates.vesktop]
+input_path = './templates/midnight-discord.css'
+output_path = '~/.config/vesktop/themes/midnight-discord.css'
+
+[templates.vicinae]
+input_path = './templates/vicinae-colors.toml'
+output_path = '~/.local/share/vicinae/themes/matugen.toml'
+post_hook = 'vicinae theme set matugen'
+
+[templates.wine]
+input_path = './templates/wine.reg'
+output_path = '/tmp/wine.reg'
+post_hook = 'wine regedit /tmp/wine.reg'
+
+[templates.yazi]
+input_path = './templates/yazi-theme.toml'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.swww]
+input_path = './templates/swww_input'
+output_path = '~/.config/matugen/templates/swww_output'
+post_hook = "swww img --transition-type center '{{ image }}'"

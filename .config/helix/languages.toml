@@ -1,0 +1,36 @@
+[language-server.qmlls]
+command = "qmlls6"
+
+[[language]]
+name = "qml"
+scope = "source.qml"
+injection-regex = "qml"
+file-types = ["qml", "ui.qml"]
+indent = { tab-width = 4, unit = "    " }
+formatter = { command = "qmlformat", args = ["-i"] }
+language-servers = [ "qmlls" ]
+auto-format = true
+
+[language-server.typescript-language-server]
+command = "typescript-language-server"
+args = ["--stdio"]
+
+[[language]]
+name = "javascript"
+scope = "source.js"
+injection-regex = "js"
+file-types = ["js", "mjs", "cjs"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "prettier" , args = ["--parser", "babel"] }
+language-servers = [ "typescript-language-server" ]
+auto-format = true
+
+[[language]]
+name = "jsx"
+scope = "source.jsx"
+injection-regex = "jsx"
+file-types = ["jsx"]
+indent = { tab-width = 2, unit = "  " }
+formatter = { command = "prettier" , args = ["--parser", "babel"] }
+language-servers = [ "typescript-language-server" ]
+auto-format = true
